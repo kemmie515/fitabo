@@ -1,0 +1,603 @@
+* {
+    font-family: Helvetica Neue;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    /* text-transform: capitalize; */
+    transition: .2s linear;
+}
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background: #101828;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 9%;
+    background: #101828;
+}
+
+.header.logo p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.header .navbar a {
+    margin: 0 .7rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: #FE826D;
+    border-bottom: .1rem solid #FE826D;
+    padding-bottom: .5rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: normal;
+    margin: 25px 0;
+}
+
+.col-2 p {
+    color: #c4c4c4;
+}
+
+.col-2 h1 span {
+    color: #ff523b;
+    font-weight: normal;
+}
+
+h1 {
+    color: #c4c4c4;
+    line-height: 60px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: none;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: purple;
+}
+
+.btn span {
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.about {
+    background-color: #fff;
+}
+
+.about.knowus {
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+    margin: 0 auto 20px;
+    position: relative;
+    color: #101828;
+}
+
+#para {
+    color: #fff;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Helvetica Neue;
+}
+
+#para1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.icons .signup {
+    border: 1px solid #ff523b;
+    background: #ff523b;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.icons .login {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.about .knowus h3 {
+    text-align: center;
+    position: relative;
+    color: #101828;
+    margin: 0 auto 25px;
+    font-weight: normal;
+}
+
+.about .knowus p {
+    text-align: center;
+    position: relative;
+    margin: 0 auto 55px;
+}
+
+.col-2 p {
+    color: #101828;
+}
+
+.sub-head2 {
+    text-align: center;
+    position: relative;
+    margin: 0 auto 45px;
+}
+
+.sub-head1 {
+    /* text-align: center; */
+    position: relative;
+    margin: 0 auto 45px;
+}
+
+
+/*testimony*/
+
+.testimony {
+    color: #101828;
+    background: #fff;
+}
+
+.testimony .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.testimony .box-container .box {
+    overflow: hidden;
+    margin-top: 20px;
+    border: .3px solid #101828;
+    flex: 1 1 10rem;
+    height: 20rem;
+    position: relative;
+    padding-left: 10px;
+}
+
+.testimony .box-container .box .content h3 {
+    color: #747474;
+    padding-left: 40px;
+    padding-top: 50px;
+    opacity: .5;
+}
+
+.testimony .box-container .box .content p {
+    color: #747474;
+    line-height: 20px;
+    padding-top: 30px;
+    opacity: .9;
+}
+
+.btn2 {
+    display: inline-block;
+    color: #101828;
+    padding: 5px;
+    margin: 30px 0;
+    transition: background 0.5s;
+}
+
+.btn2:hover {
+    color: #111;
+    border-bottom: .1rem solid #FE826D;
+    padding-bottom: .5rem;
+}
+
+.work {
+    color: #101828;
+    background: #fff;
+}
+
+.work .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: .3px solid #101828;
+}
+
+.work .box-container .box {
+    overflow: hidden;
+    margin-top: 20px;
+    flex: 1 1 10rem;
+    background-color: #747474;
+    /* height: 20rem; */
+    /* position: relative; */
+    padding-left: 10px;
+}
+
+.work .box-container .box .content h3 {
+    color: #747474;
+    padding-left: 40px;
+    padding-top: 50px;
+    opacity: .5;
+}
+
+.work .box-container .box .content p {
+    color: #747474;
+    line-height: 20px;
+    padding-top: 30px;
+    opacity: .9;
+}
+
+.btn2 {
+    display: inline-block;
+    color: #101828;
+    padding: 5px;
+    margin: 30px 0;
+    transition: background 0.5s;
+}
+
+.btn2:hover {
+    color: #111;
+    border-bottom: .1rem solid #FE826D;
+    padding-bottom: .5rem;
+}
+
+
+/*work*/
+
+.col-sm h1 {
+    font-size: 50px;
+}
+
+.col-sm p {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+#row1 {
+    background: #c4c4c4;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+}
+
+#rcorners {
+    border-radius: 50%;
+    background: #c4c4c4;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Create four equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column h1 {
+    padding-top: 15px;
+    /* margin-bottom: 20px; */
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.column p {
+    padding-top: 10px;
+    /* margin-bottom: 20px; */
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#column {
+    float: left;
+    width: 33.33%;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+
+/* Clear floats after the columns */
+
+#row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#column h1 {
+    font-size: 1rem;
+}
+
+.btn {
+    /* align-items: left;
+    margin-bottom: 5%;
+    margin-left: 85%;
+    margin-top: 1rem 2rem;
+    padding: .5rem 2rem; */
+    display: inline-block;
+    font-size: 1rem;
+    color: #fff;
+    background: #747474;
+    cursor: pointer;
+}
+
+.quiz {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#blog1 {
+    align-items: center;
+}
+
+#heading {
+    text-align: center;
+    color: #101828;
+    padding-bottom: 1rem;
+    line-height: 25px;
+    padding-top: .5rem;
+    font-size: 1rem;
+}
+
+.button {
+    display: inline-block;
+    color: #101828;
+    padding: 12px;
+    margin: 30px 0;
+    transition: background 0.5s;
+    background: #ff523b;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#button {
+    display: inline-block;
+    color: #101828;
+    padding: 12px;
+    margin: 30px 0;
+}
+
+.button1 {
+    display: inline-block;
+    color: #101828;
+    width: 50%;
+    padding: 12px;
+    margin: 30px 0;
+    transition: background 0.5s;
+    background: #ff523b;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    border: 1px solid #747474;
+    border-radius: 4px;
+}
+
+input[type=text] {
+    border: 1px solid #747474;
+    border-radius: 4px;
+}
+
+input[type=number] {
+    border: 1px solid #747474;
+    border-radius: 4px;
+}
+
+input[type=password] {
+    border: 1px solid #747474;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: .2px solid #747474;
+    border-radius: 4px;
+    font-size: 15px;
+    resize: none;
+}
+
+label {
+    padding-top: 20px;
+}
+
+
+/* The sidebar menu */
+
+.left {
+    height: auto;
+    /* Full-height: remove this if you want "auto" height */
+    width: 260px;
+    /* Set the width of the sidebar */
+    position: absolute;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #101828;
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 90px;
+    padding-left: 50px;
+}
+
+
+/* The navigation menu links */
+
+.left p {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: .8rem;
+    color: #fff;
+    display: block;
+}
+
+
+/* Style page content */
+
+.main {
+    margin-left: 300px;
+    width: 80%;
+    /* Same as the width of the sidebar */
+    margin-bottom: 100px;
+    margin-top: 80px;
+    padding-right: 100px;
+    /* padding-bottom: 80px; */
+    background: #fff;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 1.5rem 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+
+@media(max-width:768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+    .btn {
+        margin-bottom: 150px;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+        display: none;
+    }
+    .header .navbar {
+        right: 0;
+    }
+    .header .navbar a {
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: 1rem;
+        font-size: 3rem;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .btn {
+        margin-top: 90px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
