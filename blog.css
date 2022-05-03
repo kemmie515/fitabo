@@ -1,0 +1,246 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection {
+    background: var(--orange);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 1.5rem 9%;
+}
+
+body {
+    background: #fff;
+}
+
+
+/* .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    text-align: center;
+}
+
+.flex-item-left {
+    padding: 10px;
+    flex: 60%;
+}
+
+.flex-item-right {
+    padding: 10px;
+    flex: 40%;
+} */
+
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+
+@media (max-width: 800px) {
+    .flex-item-right,
+    .flex-item-left {
+        flex: 100%;
+    }
+}
+
+.packages .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.packages .box-container .box {
+    flex: 1 1 25rem;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.packages .box-container .box img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.packages .box-container .box .content {
+    padding: 2rem;
+}
+
+.packages .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.packages .box-container .box .content h3 i {
+    color: var(--orange);
+}
+
+.packages .box-container .box .content p {
+    font-size: 1.2rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.packages .box-container .box .content .stars i {
+    font-size: 1.7rem;
+    color: var(--orange);
+}
+
+.packages .box-container .box .content .price {
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.packages .box-container .box .content .price span {
+    color: #666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #747474;
+    color: #c4c4c4;
+    margin-right: 10px;
+    padding: 1rem 2rem;
+    border: .4rem #747474;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.btn1 {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #c4c4c4;
+    margin-right: 10px;
+    padding: 1rem 2rem;
+    border: .4rem #747474;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.line {
+    padding-top: 50px;
+    border-bottom: 1px solid #747474;
+}
+
+.line1 {
+    padding-top: 50px;
+    border-bottom: 1px solid #fff;
+}
+
+.footer {
+    background-color: #101828;
+}
+
+.footer {
+    background: #101828;
+    padding-top: 30px;
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box {
+    padding: 1rem 0;
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 1.5rem;
+    padding: .7rem 0;
+    color: #fff;
+}
+
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    color: #747474;
+    padding: .7rem 0;
+    padding-top: 60px;
+    justify-content: center;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    padding: .7rem 0;
+    color: #747474;
+    padding-left: 60px;
+}
+
+.footer .box-container .box a:hover {
+    color: #ff523b;
+}
+
+.footer .credit {
+    /* display: flex;
+    flex-wrap: wrap; */
+    padding: 2rem 1rem;
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #747474;
+    /* border-top: .1rem solid rgba(255, 255, 255, .2); */
+}
+
+.button {
+    display: inline-block;
+    color: #101828;
+    padding: 12px;
+    margin: 30px 0;
+    transition: background 0.5s;
+    background: #ff523b;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    border: 1px solid #747474;
+}
+
+table,
+th,
+td {
+    width: 50%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td th img {
+    width: 50%;
+}
+
+
+/*media queries*/
+
+@media (max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+}

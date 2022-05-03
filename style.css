@@ -562,11 +562,29 @@ label {
 }
 
 @media(max-width:768px) {
-    #menu-btn {
-        display: inline-block;
+    .col-2 {
+        flex-basis: 50%;
+        min-width: 300px;
+        gap: 5rem;
+    }
+    .col-2 p {
+        font-size: 1.5rem;
+        gap: 2rem;
+    }
+    .sub-head2 {
+        font-size: 18px;
     }
     .btn {
         margin-bottom: 150px;
+    }
+    .testimony .box-container .box {
+        overflow: hidden;
+        padding-bottom: 50px;
+        border: .3px solid #101828;
+        flex: 1 1 10rem;
+        height: 20rem;
+        position: relative;
+        padding-left: 10px;
     }
     .header .navbar {
         position: absolute;
@@ -593,6 +611,19 @@ label {
     }
     .btn {
         margin-top: 90px;
+    }
+    .heading {
+        font-size: 30px;
+        text-align: center;
+        margin: 0 auto 20px;
+        position: relative;
+        color: #101828;
+    }
+    .knowus h3 {
+        font-size: 20px;
+    }
+    .knowus p {
+        font-size: 15px;
     }
 }
 
